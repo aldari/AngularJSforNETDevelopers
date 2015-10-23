@@ -1,12 +1,6 @@
-﻿@{
-    Layout = null;
+﻿@model string
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<head>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    </head>
-    <body ng-app>
-        Hello {{1+1}} the World!
-    </body>
-</html>
+Hello {{1+1}} the @Model!
