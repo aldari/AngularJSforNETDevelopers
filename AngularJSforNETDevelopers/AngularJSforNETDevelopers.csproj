@@ -161,6 +161,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controllers\InstructorsController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Models\Courses\CourseVm.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -204,6 +205,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <Content Include="Views\Instructors\Index.cshtml" />
+    <Content Include="Views\Registration\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

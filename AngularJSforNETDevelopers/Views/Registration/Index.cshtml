@@ -1,0 +1,25 @@
+﻿@model AngularJSforNETDevelopers.Models.Registration.RegistrationVm
+
+@{
+    ViewBag.Title = "Regirstration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" ng-controller="RegistrationController">
+    <div class="row">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li><span class="navbar-brand">Registration</span></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Cources">Browse Courses</a></li>
+                    <li><a href="/Instructors">Browse Instructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-view></div>
+</div>
