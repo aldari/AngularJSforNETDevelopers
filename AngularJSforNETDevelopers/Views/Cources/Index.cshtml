@@ -7,7 +7,7 @@
 {
     <script src="~/Scripts/Courses/courses-controller.js"></script>
     <script type="text/javascript">
-        registrationModule.factory('bootstrappedData', function() {
+        registrationModule.factory('bootstrappedCourses', function() {
             return {                
                 courses: @Html.Raw(Model)
             };
@@ -22,6 +22,11 @@
 @*     {number: 'TRAN201', name: 'Transfiguration', instructor: 'Minerva McGonagall'}*@
 @*     ]">*@
 <div class="container" ng-controller="CoursesController">
+    <div class="row">
+        <div class="span10">
+            <h2>Courses</h2>
+        </div>
+    </div>
     <div class="row">
         <div class="span10">
             <table class="table table-condensed table-hover">
