@@ -14,6 +14,15 @@ namespace AngularJSforNETDevelopers
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Registration Courses SPA",
+                url: "Registration/Courses",
+                defaults: new { controller = "Registration", action = "Index"});
+            routes.MapRoute(
+                name: "Registration Instructors SPA",
+                url: "Registration/Instructors",
+                defaults: new { controller = "Registration", action = "Index" });
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Cources", action = "Index", id = UrlParameter.Optional }
