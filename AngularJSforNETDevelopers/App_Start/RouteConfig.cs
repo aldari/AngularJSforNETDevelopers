@@ -25,7 +25,7 @@ namespace AngularJSforNETDevelopers
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Cources", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Registration", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
