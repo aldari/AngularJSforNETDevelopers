@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace AngularJSforNETDevelopers
@@ -20,6 +16,10 @@ namespace AngularJSforNETDevelopers
             routes.MapRoute(
                 name: "Registration Instructors SPA",
                 url: "Registration/Instructors",
+                defaults: new { controller = "Registration", action = "Index" });
+            routes.MapRoute(
+                name: "Registration Create Account SPA",
+                url: "Registration/CreateAccount",
                 defaults: new { controller = "Registration", action = "Index" });
 
             routes.MapRoute(
