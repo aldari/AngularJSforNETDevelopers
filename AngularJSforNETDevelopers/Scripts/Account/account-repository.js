@@ -1,13 +1,9 @@
 ﻿'use strict';
 
-registrationModule.factory('accountRepository', function ($http, $q) {
+registrationModule.factory('accountRepository', function ($resource) {
     return {
         save: function (student) {
-            var deferred = $q.defer();
-            $http.post('/Account/Save', student)
-                .success(function () { deferred.resolve(); })
-                .error(function() { deferred.reject(); });
-            return deferred.promise;
+            $resource('/Account/Save', student).save(student);
         }
     };
 });
