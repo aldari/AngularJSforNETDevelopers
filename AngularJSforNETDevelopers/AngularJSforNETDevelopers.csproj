@@ -174,7 +174,6 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
-    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Models\StudentVm.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -212,7 +211,6 @@
     <Content Include="templates\courses.html" />
     <Content Include="templates\create-account.html" />
     <Content Include="templates\instructors.html" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -220,10 +218,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
-    <Content Include="Views\Registration\Index.cshtml" />
+    <Content Include="registration.html" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
