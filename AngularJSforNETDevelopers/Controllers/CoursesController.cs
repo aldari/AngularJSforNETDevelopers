@@ -1,15 +1,16 @@
-﻿using System.Web.Mvc;
+﻿using AngularJSforNETDevelopers.Models.Courses;
 using AngularJSforNETDevelopers.Models.Registration;
+using System.Web.Http;
 
 namespace AngularJSforNETDevelopers.Controllers
 {
-    public class CoursesController : JsonController
+    public class CoursesController : ApiController
     {
         private readonly RegistarationVmBuilder _registarationVmBuilder = new RegistarationVmBuilder();
         
-        public ActionResult Index()
+        public CourseVm[] Get()
         {
-            return Json(_registarationVmBuilder.GetCourseVms(), JsonRequestBehavior.AllowGet);
+            return _registarationVmBuilder.GetCourseVms();
         }
     }
 }
