@@ -1,15 +1,15 @@
 ﻿using System.Net;
-using System.Web.Mvc;
+using System.Net.Http;
+using System.Web.Http;
 using AngularJSforNETDevelopers.Models;
 
 namespace AngularJSforNETDevelopers.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : ApiController
     {
-        [HttpPost]
-        public ActionResult Save(StudentVm student)
+        public HttpResponseMessage Post(StudentVm student)
         {
-            return new HttpStatusCodeResult(HttpStatusCode.OK);
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
 }
